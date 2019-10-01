@@ -8,17 +8,7 @@ class App extends React.Component {
   // you will need a place to store your state in this component.
   // design `App` to be the parent component of your application.
   // this component is going to take care of state, and any change handlers you need to work with your state
-  constructor(props) {
-    super(props);
-    this.state = {
-      task: '',
-      taskList: []
-    };
-  }
 
-  handleSubmitTask = event => {
-    this.state({task : event.target.value});
-  }
   
   render() {
     return (
@@ -26,7 +16,6 @@ class App extends React.Component {
       <Card>
         <h1> To Do List App </h1>
         <TodoList>
-
         </TodoList>
       </Card>
       </Background>
